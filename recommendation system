@@ -1,0 +1,108 @@
+#include <stdio.h>
+void main()
+{
+  int choice,select,choose,take;
+  printf("CHOOSE\n 1)Books\n 2)Movies\n 3)Songs\n");
+  printf("Enter only the numeric value\n");
+  scanf("%d",&choice);
+  switch(choice)
+  {
+      case 1:
+      printf("Which type of book would you like to ready?\n");
+      printf("Select\n");
+      printf(" 1)Romantic\n 2)Horror\n 3)Feel Good\n");
+      printf("Enter only the numeric value\n");
+      scanf("%d",&select);
+      if(select==1)
+      {
+        printf("1)Red, White & Royal Blue(2019)\n");
+        printf("2)With Love, from Cold World (2023)\n");
+        printf("3)Get a Life, Chloe Brown (2019)\n");
+      }
+      else if(select==2)
+      {
+        printf("1)Dracula (1897)\n");
+        printf("2)The Loop(2021)\n");
+        printf("3)Open Road Media Harvest Home (2018)\n");
+      }
+      else if(select==3)
+      {
+       printf("1)The Shell Seekers (1987)\n");
+       printf("2)How to Be a Good Creature (2018)\n");
+       printf("3)The City Baker’s Guide to Country Living (2016)\n");
+      }
+      else
+      {
+        printf("WRONG CHOICE!!\n");
+        printf("Please select the correct choice\n");
+      }
+      break;
+
+      case 2:
+      printf("Which type of movie would you like to watch\n");
+      printf("select the genre\n");
+      printf(" 1)Romantic\n 2)Horror\n 3)Feel Good\n");
+      scanf("%d",&choose);
+      printf("Enter only the numeric value\n");
+      if(choose==1)
+      {
+        printf("1)The Little Mermaid (I) (2023)\n");
+        printf("2)Poor Things (2023)\n");
+        printf("3)No Hard Feelings (2023)\n");
+      }
+      else if(choose==2)
+      {
+        printf("1)The Nun II (2023)\n");
+        printf("2)The Last Voyage of the Demeter (2023)\n");
+        printf("3)A Haunting in Venice (2023)\n");
+      }
+      else if(choose==3)
+      {
+        printf("1)Forrest Gump (1994)\n");
+        printf("2)Green Book (2018)\n");
+        printf("3)City Lights (1931)\n");
+      }
+      else
+      {
+        printf("WRONG CHOICE!!\n");
+        printf("Please select the correct choice\n");
+      }
+      break;
+
+      case 3:
+      printf("Which type of song would you like to listen?\n");
+      printf("select the genre\n");
+      printf(" 1)Romantic\n 2)Breakup\n 3)Feel Good\n");
+      scanf("%d",&take);
+      printf("Enter only the numeric value\n");
+      if(take==1)
+      {
+          printf("1)I Do It for You - Bryan Adams\n");
+          printf("2)Tum Hi Ho - Arijit Singh\n");
+          printf("3)I Can't Help Falling in Love - Elvis Presley\n");
+      }
+      else if(take==2)
+      {
+        printf("1)Call Out My Name - The Weeknd\n");
+        printf("2)Heartbeats - José González\n");
+        printf("3)Love Yourself - Justin Bieber\n");
+      }
+      else if(take==3)
+      {
+        printf("1)Happy - Pharrell\n");
+        printf("2)Uptown Funk - By Mark Ronson Ft. Bruno Mars\n");
+        printf("3)Take On Me - A-Ha\n");
+      }
+      else
+      {
+        printf("WRONG CHOICE!!\n");
+        printf("Please select the correct choice\n");
+      }
+      break;
+      
+      default:
+        printf("Error! operator is not correct\n");
+      printf("if you want to have more recommendations do visit codesoftrecommendations.com");
+  }
+  printf("Thank you!!");
+}
